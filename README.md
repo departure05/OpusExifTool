@@ -1,2 +1,2 @@
 # OpusExifTool
-All the Exiftool you can ask for Opus
+All the Exiftool data you can ask for Opus!
