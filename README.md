@@ -128,8 +128,9 @@ You can access the Options dialog from here to configure settings such as the sc
 
 <img width="1057" height="572" alt="options1" src="https://github.com/user-attachments/assets/5472396a-330e-42f1-8c3f-f7dae99e054d" />
 
-<img width="1057" height="572" alt="options2" src="https://github.com/user-attachments/assets/387a8069-597a-4ce3-b229-d5d5303b4ebb" />
+<img width="1057" height="572" alt="options2" src="https://github.com/user-attachments/assets/83f08ebd-c609-4c72-8cf4-10a9d72ab370" />
 
+* Assume QuickTime date/time tags are stored as UTC : Assume that integer-valued QuickTime date/time values are stored as UTC, causing conversion to local time when they are extracted. This uses ExifTool's QuickTimeUTC=1 API. More info [here](https://exiftool.org/ExifTool.html#StrictDate:~:text=undef-,QuickTimeUTC,-Flag%20set%20to).
 
 (This dialog is also accessible from the Script Management window by clicking the About button.)
 
@@ -288,7 +289,7 @@ E.g.
 * When using `OpusExifTool PURGEDB`, note that checking whether certain paths exist (e.g., slow remote paths) may take longer. During this time, no other operations will be available.
 * When the database is enabled, the script includes and populates two additional columns: `Stored` (a Boolean property indicating whether the file has data in the database) and `Last Saved` (the date the file was added to or updated in the database).
 * The database stores paths using the volume GUID instead of the drive letter. This is particularly useful for files on removable or USB drives, which are prone to changing drive letters.
-
+* Reports in the database will be automatically updated if the user change language or quicktime date/time related option.
 ---
 
 #### **Acknowledgments/Credits:**
